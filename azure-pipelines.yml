@@ -22,11 +22,4 @@ steps:
     goals: 'package'
     allowBrokenSymlinks: 
     - task: CopyFiles@2
-  inputs:
-    Contents: '**/.war'
-    TargetFolder: '$(build.artifactstagingdirectory)'
-- task: PublishBuildArtifacts@1
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'testArtificate'
-    publishLocation: 'Container'
+
